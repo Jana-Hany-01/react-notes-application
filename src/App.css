@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.App{
+  text-align:center;
 }
+.addNote {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width:100%; 
+  height:100px; 
+  background-color:antiquewhite; 
+  color:black;
+  text-align:center; 
+  display:flex;
+  flex-wrap:wrap; 
+  justify-content: center ;
+  align-items: center; 
+  
 }
+.addNote input  {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+border: solid 1px black;
+padding:10px; 
+width:35%;
+border-radius:5px;
+margin-right:10px;
 }
+.addNote button {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  padding:5px 15px ; 
+  background-color:lightblue;
+  color:black ; 
+  font-weight:bold; 
+  border: none;
+  border-radius:5px;
+}
+.notesList {
+  /* border: solid black 1px;  */
+  display : flex; 
+  flex-wrap: wrap ; 
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.container{
+  width:70%; 
+  /* border: solid red 1px; */
+  display:flex; 
+  flex-wrap:wrap;
+  justify-content : center; 
+  align-items :space-between ; 
+  /* row-gap:3px; */
+}
+.flexItem {
+  width : 60%; 
+  /* border: solid black 1px; */
+  display: flex; 
+  justify-content: space-around;
+  align-items: center; 
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexItem button {
+  margin:5px; 
 }
